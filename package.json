@@ -1,0 +1,33 @@
+{
+  "name": "mpm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --port 8080",
+    "dev": "npm run build && npm run start",
+    "old_dev": "tsx --watch src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Callum Hay",
+  "license": "MIT",
+  "description": "Testing the Material Point Method in Typescript and Babylonjs.",
+  "devDependencies": {
+    "@babylonjs/core": "^7.4.0",
+    "@babylonjs/inspector": "^7.4.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/three": "^0.164.0",
+    "html-webpack-plugin": "^5.6.0",
+    "ts-loader": "^9.5.1",
+    "tsx": "^4.7.3",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "three": "^0.164.1"
+  }
+}
